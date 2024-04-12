@@ -1,27 +1,24 @@
-function findSecondLargest(arr) { 
-	let first, second; 
 
-	
-	if (arr.length < 2) { 
-		return "Invalid Input"; 
-	} 
+let ar=[3,33,2,9,78,78,7,77,77,77,3]
 
-	 
-	arr.sort(); 
+let max=ar[0];
+let secondM=ar[1];
 
-	 
-	for (let i = arr.length - 2; i >= 0; i--) { 
-		
-		if (arr[i] !== arr[arr.length - 1]) { 
-			return "The second largest element is " + arr[i]; 
-		} 
-	} 
+if(ar.length<2)
+{
+	console.log(NA)
 
-	return "There is no second largest element"; 
-} 
-
-
-const arr = [12, 35, 10, 35, 10, 34, 1]; 
-
-
-console.log(findSecondLargest(arr));
+}
+else{
+	for (let ind =1;ind<ar.length;ind++)
+	{
+		if (max<ar[ind])
+		{
+			secondM=max;
+			max=ar[ind];
+		}
+		if (max!=ar[ind]&&secondM<ar[ind])
+		secondM=ar[ind]
+	}
+	console.log(max,secondM)
+}

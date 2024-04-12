@@ -11,3 +11,4 @@ function findLargestElement(arr) {
 const myArray = [10, 15, 18, 20, 23];
 const largest = findLargestElement(myArray);
 console.log(`The largest element in the array is: ${largest}`);
+

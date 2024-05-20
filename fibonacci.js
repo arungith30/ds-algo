@@ -11,5 +11,5 @@ function fibonacci(n) {
     return current;
 }
 
-const n = 1; 
+const n = 10; 
 console.log(`The ${n}-th Fibonacci number is: ${fibonacci(n)}`);

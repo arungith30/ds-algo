@@ -6,4 +6,4 @@ function factorial(n){
 }
 
 console.log(factorial(4))
-//factorial(3)
+factorial(3)

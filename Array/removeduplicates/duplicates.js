@@ -1,10 +1,10 @@
 let Ar=Array.from({length:20},()=>parseInt(Math.random()*10))
 
 let unique =[];
-let count=0;
+
 
 for(let i=0;i<Ar.length;i++)
-    {
+    {let count=0;
         for(let j=0; j<i; j++)
         {
         if(Ar[j]==Ar[i])

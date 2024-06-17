@@ -6,7 +6,7 @@ function binarySearch(array,key,start,end)
         let mid = Math.floor((start + end) / 2);
         if(key===array[mid])
             return true;
-         else if(key<array[mid])
+        else if(key<array[mid])
             end =mid-1;
         else (key>array[mid])
         start=mid+1;

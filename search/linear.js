@@ -7,12 +7,9 @@ function search(arr, n, x)
     return -1;
 }
 
-
-
     let arr = [ 2, 3, 4, 10, 40 ];
     let x = 10;
     let n = arr.length;
-
 
     let result = search(arr, n, x);
     (result == -1)
